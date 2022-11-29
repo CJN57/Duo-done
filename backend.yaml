@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: stratcastor/duo-backend:latest
+        image: cjn57/duo-backend:latest
         ports:
         - containerPort: 5500
