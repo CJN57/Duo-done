@@ -24,7 +24,7 @@ spec:
       app: backend
   strategy:
     rollingUpdate:
-      maxSurge: 10% 
+      maxSurge: 10%
       maxUnavailable: 25%
   template:
     metadata:
@@ -33,6 +33,7 @@ spec:
     spec:
       containers:
       - name: backend
+        ImagePullPolicy: Always
         image: cjn57/duo-backend:latest
         ports:
         - containerPort: 5500
