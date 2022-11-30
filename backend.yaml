@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: backend
-        ImagePullPolicy: Always
+        imagePullPolicy: Always
         image: cjn57/duo-backend:latest
         ports:
         - containerPort: 5500
